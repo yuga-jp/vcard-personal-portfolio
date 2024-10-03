@@ -408,6 +408,39 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 /*-----------------------------------*\
+  #LANG-SELECTOR
+\*-----------------------------------*/
+.lang-selector {
+  height: 50px;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  box-shadow: var(--shadow-2);
+  z-index: 10;
+}
+
+.lang-selector-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.lang-selector-link {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  padding: 20px 7px;
+  transition: color var(--transition-1);
+}
+
+.lang-selector-link:hover,
+.lang-selector-link:focus { color: var(--light-gray-70); }
+
+.lang-selector-link.active { color: var(--orange-yellow-crayola); }
+
+/*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
 .navbar {
@@ -1621,6 +1654,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .content-wrapper {
+    position: relative;
+    top: -50px;
     min-width: 75%;
     width: 75%;
     margin: 0;
@@ -1687,5 +1722,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
   .timeline-text { max-width: 700px; }
-
 }
