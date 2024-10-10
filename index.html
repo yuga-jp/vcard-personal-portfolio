@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
 
@@ -11,7 +10,7 @@
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
   <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="./styles/output.css" rel="stylesheet" >
 
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +32,10 @@
           <img src="./assets/images/my-avatar.png" alt="Yuga Sonda" width="80">
         </figure>
 
-        <div class="info-content">
-          <h1 class="name" data-i18n="name">Yuga Sonda</h1>
+        <div>
+          <h1 class="text-base sm:text-2xl font-medium text-slate-50 mb-2.5 sm:mb-4 xl:text-center xl:whitespace-nowrap" data-i18n="name">Yuga Sonda</h1>
 
-          <p class="title">Enginner, Student</p>
+          <p class="text-xs xl:text-sm font-light text-white w-max px-3 py-1 sm:px-5 sm:py-1.5 xl:m-auto rounded-lg bg-zinc-800">Enginner, Student</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -47,61 +46,55 @@
       </div>
 
       <div class="sidebar-info_more">
-        <div class="separator"></div>
+        <div class="w-full h-px my-4 sm:my-8 bg-slate-700"></div>
 
-        <ul class="contacts-list">
+        <ul class="grid gap-4 sm:gap-5 md:gap-x-4 md:gap-y-7 grid-cols-1">
 
-          <li class="contact-item">
+          <li class="min-w-full flex items-center gap-4">
             <div class="icon-box">
               <i class="fa-solid fa-calendar-day"></i>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="text-xs md:text-sm text-gray-400 mb-0.5">BIRTHDAY</p>
               <time datetime="2001-11-23">November 23, 2001</time>
             </div>
           </li>
 
-          <li class="contact-item">
+          <li class="min-w-full flex items-center gap-4">
             <div class="icon-box">
               <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="text-xs md:text-sm text-gray-400 mb-0.5">LOCATION</p>
               <address>Tokyo, Japan</address>
             </div>
           </li>
 
         </ul>
 
-        <div class="separator"></div>
+        <div class="w-full h-px my-4 sm:my-8 xl:my-3 bg-slate-700 xl:opacity-0"></div>
 
-        <ul class="social-list">
+        <ul class="flex justify-start items-center gap-4 pb-1 pl-2 xl:justify-center">
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+         
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+      
         </ul>
       </div>
     </aside>
 
-    <div class="content-wrapper">
+    <div class="justify-end w-11/12">
       <nav class="lang-selector">
         <ul class="lang-selector-list">
 
@@ -115,7 +108,7 @@
 
         </ul>
       </nav>
-      <div class="main-content">
+      <div class="main-content bg-zinc-900">
         <nav class="navbar">
           <ul class="navbar-list">
 
@@ -144,7 +137,7 @@
 
         <article class="about" data-page="about">
           <header>
-            <h2 class="h2 article-title">About me</h2>
+            <h2 class="article-title">About me</h2>
           </header>
 
           <section class="about-text">
@@ -166,7 +159,7 @@
           </section>
 
           <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+            <h3 class="service-title">What i'm doing</h3>
             <ul class="service-list">
 
               <li class="service-item">
@@ -176,7 +169,7 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
+                  <h4 class="service-item-title">Web design</h4>
 
                   <p class="service-item-text">
                     The most modern and high-quality design made at a professional level.
@@ -190,7 +183,7 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
+                  <h4 class="service-item-title">Web development</h4>
 
                   <p class="service-item-text">
                     High-quality development of sites at the professional level.
@@ -204,7 +197,7 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <h4 class="service-item-title">Mobile apps</h4>
 
                   <p class="service-item-text">
                     Professional development of applications for iOS and Android.
@@ -218,7 +211,7 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
+                  <h4 class="service-item-title">Photography</h4>
 
                   <p class="service-item-text">
                     I make high-quality photos of any category at a professional level.
@@ -231,7 +224,7 @@
           </section>
 
           <section class="testimonials">
-            <h3 class="h3 testimonials-title">Testimonials</h3>
+            <h3 class="testimonials-title">Testimonials</h3>
             <ul class="testimonials-list has-scrollbar">
 
               <li class="testimonials-item">
@@ -240,7 +233,7 @@
                     <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                   </figure>
 
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                  <h4 class="testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
@@ -261,7 +254,7 @@
                     <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                   </figure>
 
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                  <h4 class="testimonials-item-title" data-testimonials-title>Jessica miller</h4>
 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
@@ -282,7 +275,7 @@
                     <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                   </figure>
 
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                  <h4 class="testimonials-item-title" data-testimonials-title>Emily evans</h4>
 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
@@ -324,7 +317,7 @@
 
               <div class="modal-content">
 
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                <h3 class="modal-title" data-modal-title>Daniel lewis</h3>
 
                 <time datetime="2021-06-14">14 June, 2021</time>
 
@@ -350,7 +343,7 @@
           -->
 
           <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
+            <h3 class="clients-title">Clients</h3>
 
             <ul class="clients-list has-scrollbar">
 
@@ -397,7 +390,7 @@
 
         <article class="cv active" data-page="cv">
           <header>
-            <h2 class="h2 article-title">Curriculum Vitae</h2>
+            <h2 class="article-title">Curriculum Vitae</h2>
           </header>
 
           <section class="timeline">
@@ -406,13 +399,13 @@
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
 
-              <h3 class="h3">Education</h3>
+              <h3>Education</h3>
             </div>
 
             <ol class="timeline-list">
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">The University of Tokyo</h4>
+                <h4 class="timeline-item-title">The University of Tokyo</h4>
 
                 <span>2025.4 — </span>
 
@@ -424,7 +417,7 @@
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Keio University</h4>
+                <h4 class="timeline-item-title">Keio University</h4>
 
                 <span>2021.4 — 2025.3</span>
 
@@ -435,7 +428,7 @@
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Shiba Senior High School</h4>
+                <h4 class="timeline-item-title">Shiba Senior High School</h4>
 
                 <span>2017.4 — 2020.3</span>
 
@@ -456,13 +449,13 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Experience</h3>
+              <h3>Experience</h3>
             </div>
 
             <ol class="timeline-list">
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Creative director</h4>
+                <h4 class="timeline-item-title">Creative director</h4>
 
                 <span>2015 — Present</span>
 
@@ -475,7 +468,7 @@
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Art director</h4>
+                <h4 class="timeline-item-title">Art director</h4>
 
                 <span>2013 — 2015</span>
 
@@ -487,7 +480,7 @@
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Web designer</h4>
+                <h4 class="timeline-item-title">Web designer</h4>
 
                 <span>2010 — 2013</span>
 
@@ -502,12 +495,12 @@
           </section>
 
           <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
+            <h3 class="skills-title">My skills</h3>
             <ul class="skills-list content-card">
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Web design</h5>
+                  <h5>Web design</h5>
                   <data value="80">80%</data>
                 </div>
 
@@ -518,7 +511,7 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Graphic design</h5>
+                  <h5>Graphic design</h5>
                   <data value="70">70%</data>
                 </div>
 
@@ -529,7 +522,7 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Branding</h5>
+                  <h5>Branding</h5>
                   <data value="90">90%</data>
                 </div>
 
@@ -540,7 +533,7 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">WordPress</h5>
+                  <h5>WordPress</h5>
                   <data value="50">50%</data>
                 </div>
 
@@ -556,7 +549,7 @@
         <article class="portfolio" data-page="portfolio">
 
           <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="article-title">Portfolio</h2>
           </header>
 
           <section class="projects">
@@ -796,7 +789,7 @@
         <article class="blog" data-page="blog">
 
           <header>
-            <h2 class="h2 article-title">Blog</h2>
+            <h2 class="article-title">Blog</h2>
           </header>
 
           <section class="blog-posts">
@@ -820,7 +813,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                    <h3 class="blog-item-title">Design conferences in 2022</h3>
 
                     <p class="blog-text">
                       Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
@@ -848,7 +841,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                    <h3 class="blog-item-title">Best fonts every designer</h3>
 
                     <p class="blog-text">
                       Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
@@ -876,7 +869,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                    <h3 class="blog-item-title">Design digest #80</h3>
 
                     <p class="blog-text">
                       Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis
@@ -905,7 +898,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                    <h3 class="blog-item-title">UI interactions of the week</h3>
 
                     <p class="blog-text">
                       Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
@@ -933,7 +926,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                    <h3 class="blog-item-title">The forgotten art of spacing</h3>
 
                     <p class="blog-text">
                       Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -961,7 +954,7 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div>
 
-                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                    <h3 class="blog-item-title">Design digest #79</h3>
 
                     <p class="blog-text">
                       Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
@@ -980,7 +973,7 @@
 
         <article class="contact" data-page="contact">
           <header>
-            <h2 class="h2 article-title">Contact</h2>
+            <h2 class="article-title">Contact</h2>
           </header>
 
           <section class="mapbox" data-mapbox>
@@ -992,7 +985,7 @@
           </section>
 
           <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
+            <h3 class="form-title">Contact Form</h3>
 
             <form action="#" class="form" data-form>
               <div class="input-wrapper">
@@ -1017,7 +1010,7 @@
   </main>
 
   <!-- custom js link -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./scripts/script.js"></script>
 
   <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
