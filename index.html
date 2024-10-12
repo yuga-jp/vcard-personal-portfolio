@@ -25,8 +25,8 @@
 </head>
 
 <body>
-  <main>
-    <aside class="sidebar" data-sidebar>
+  <main class="xl:w-2/3 xl:flex justify-center mx-auto">
+    <aside class="sidebar xl:flex-none xl:sticky xl:w-64 h-28 sm:h-44 xl:h-max xl:px-8 xl:pt-12 xl:py-8 xl:top-16" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Yuga Sonda" width="80">
@@ -94,44 +94,37 @@
       </div>
     </aside>
 
-    <div class="justify-end w-11/12">
-      <nav class="lang-selector">
-        <ul class="lang-selector-list">
+    <div class="mx-3 md:mx-6 lg:mx-10 min-w-80">
+      <div class="bg-zinc-900 border border-slate-700 relative rounded-2xl p-4 sm:p-8 w-full">
+        <nav class="navbar flex fixed lg:absolute lg:w-max lg:h-16 lg:top-0 lg:right-0 lg:bottom-auto lg:left-auto lg:rounded-tr-2xl lg:rounded-bl-2xl bg-zinc-800 border-slate-700 place-items-center">
+          <ul class="flex my-2 lg:my-4 sm:gap-5 lg:gap-6 xl:gap-8">
 
-          <li class="lang-selector-item">
-            <button class="lang-selector-link active" href="index.html" onclick="changeLanguage('en')">English</button>
-          </li>
-
-          <li>
-            <button class="lang-selector-link" href="index.html" onclick="changeLanguage('ja')">日本語</button>
-          </li>
-
-        </ul>
-      </nav>
-      <div class="main-content bg-zinc-900">
-        <nav class="navbar">
-          <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>About</button>
+            <li>
+              <button class="navbar-link text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>About</button>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>CV</button>
+            <li>
+              <button class="navbar-link active text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>CV</button>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+            <li>
+              <button class="navbar-link text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>Portfolio</button>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
+          </ul>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
+          <div class="w-px lg:h-5/6 mx-4 bg-slate-700 "></div>
 
+          <ul class="flex my-2 lg:my-4 sm:gap-3">
+
+            <li>
+              <button class="text-xs sm:text-sm md:text-base lg:font-medium text-slate-50 hover:text-slate-400 focus:text-orange-300" href="index.html" onclick="changeLanguage('en')">English</button>
+            </li>
+  
+            <li>
+              <button class="text-xs sm:text-sm md:text-base lg:font-medium text-slate-50 hover:text-slate-400 focus:text-orange-300" href="index.html" onclick="changeLanguage('ja')">日本語</button>
+            </li>
+  
           </ul>
         </nav>
 
@@ -774,235 +767,6 @@
 
             </ul>
 
-          </section>
-
-        </article>
-
-
-
-
-
-        <!--
-          - #BLOG
-        -->
-
-        <article class="blog" data-page="blog">
-
-          <header>
-            <h2 class="article-title">Blog</h2>
-          </header>
-
-          <section class="blog-posts">
-
-            <ul class="blog-posts-list">
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">Design conferences in 2022</h3>
-
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">Best fonts every designer</h3>
-
-                    <p class="blog-text">
-                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">Design digest #80</h3>
-
-                    <p class="blog-text">
-                      Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis
-                      suscipit.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">UI interactions of the week</h3>
-
-                    <p class="blog-text">
-                      Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">The forgotten art of spacing</h3>
-
-                    <p class="blog-text">
-                      Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                  </figure>
-
-                  <div class="blog-content">
-
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="blog-item-title">Design digest #79</h3>
-
-                    <p class="blog-text">
-                      Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                    </p>
-
-                  </div>
-
-                </a>
-              </li>
-
-            </ul>
-
-          </section>
-
-        </article>
-
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400" height="300" loading="lazy"></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-                <input type="email" name="email" class="form-input" placeholder="Email address" required
-                  data-form-input>
-              </div>
-
-              <textarea name="message" class="form-input" placeholder="Your Message" required
-                data-form-input></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
           </section>
         </article>
       </div>
