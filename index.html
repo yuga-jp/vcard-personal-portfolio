@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
   <!-- custom css link -->
-  <link href="./styles/output.css" rel="stylesheet" >
+  <link href="./styles/output.css" rel="stylesheet">
 
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,18 +24,23 @@
   <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
-<body>
-  <main class="xl:w-2/3 xl:flex justify-center mx-auto">
-    <aside class="sidebar xl:flex-none xl:sticky xl:w-64 h-28 sm:h-44 xl:h-max xl:px-8 xl:pt-12 xl:py-8 xl:top-16" data-sidebar>
+<body class="flex justify-center px-3 py-3 xl:py-0">
+  <main class="flex max-w-screen-xl flex-col lg:w-5/6 xl:mb-10 xl:mt-0 xl:flex-row">
+    <aside
+      class="sidebar h-28 rounded-2xl border border-slate-700 bg-zinc-900 sm:h-44 xl:sticky xl:top-16 xl:h-max xl:w-64 xl:flex-none xl:px-8 xl:py-8 xl:pt-12"
+      data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Yuga Sonda" width="80">
         </figure>
 
         <div>
-          <h1 class="text-base sm:text-2xl font-medium text-slate-50 mb-2.5 sm:mb-4 xl:text-center xl:whitespace-nowrap" data-i18n="name">Yuga Sonda</h1>
+          <h1 class="mb-2.5 text-base font-medium text-slate-50 sm:mb-4 sm:text-2xl xl:whitespace-nowrap xl:text-center"
+            data-i18n="name">Yuga Sonda</h1>
 
-          <p class="text-xs xl:text-sm font-light text-white w-max px-3 py-1 sm:px-5 sm:py-1.5 xl:m-auto rounded-lg bg-zinc-800">Enginner, Student</p>
+          <p
+            class="w-max rounded-lg bg-zinc-800 px-3 py-1 text-xs font-light text-white sm:px-5 sm:py-1.5 xl:m-auto xl:text-sm">
+            Enginner, Student</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -46,87 +51,99 @@
       </div>
 
       <div class="sidebar-info_more">
-        <div class="w-full h-px my-4 sm:my-8 bg-slate-700"></div>
+        <div class="my-4 h-px w-full bg-slate-700 sm:my-8"></div>
 
-        <ul class="grid gap-4 sm:gap-5 md:gap-x-4 md:gap-y-7 grid-cols-1">
+        <ul class="grid grid-cols-1 gap-4 sm:gap-5 md:gap-x-4 md:gap-y-7">
 
-          <li class="min-w-full flex items-center gap-4">
+          <li class="flex min-w-full items-center gap-4">
             <div class="icon-box">
               <i class="fa-solid fa-calendar-day"></i>
             </div>
 
             <div class="contact-info">
-              <p class="text-xs md:text-sm text-gray-400 mb-0.5">BIRTHDAY</p>
+              <p class="mb-0.5 text-xs text-gray-400 md:text-sm">BIRTHDAY</p>
               <time datetime="2001-11-23">November 23, 2001</time>
             </div>
           </li>
 
-          <li class="min-w-full flex items-center gap-4">
+          <li class="flex min-w-full items-center gap-4">
             <div class="icon-box">
               <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <div class="contact-info">
-              <p class="text-xs md:text-sm text-gray-400 mb-0.5">LOCATION</p>
+              <p class="mb-0.5 text-xs text-gray-400 md:text-sm">LOCATION</p>
               <address>Tokyo, Japan</address>
             </div>
           </li>
 
         </ul>
 
-        <div class="w-full h-px my-4 sm:my-8 xl:my-3 bg-slate-700 xl:opacity-0"></div>
+        <div class="my-4 h-px w-full bg-slate-700 sm:my-8 xl:my-3 xl:opacity-0"></div>
 
-        <ul class="flex justify-start items-center gap-4 pb-1 pl-2 xl:justify-center">
+        <ul class="flex items-center justify-start gap-4 pb-1 pl-2 xl:justify-center">
 
           <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
             <i class="fa-brands fa-github"></i>
           </a>
-          
+
           <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
-         
+
           <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
             <i class="fa-brands fa-instagram"></i>
           </a>
-      
+
         </ul>
       </div>
     </aside>
 
-    <div class="mx-3 md:mx-6 lg:mx-10 min-w-80">
-      <div class="bg-zinc-900 border border-slate-700 relative rounded-2xl p-4 sm:p-8 w-full">
-        <nav class="navbar flex fixed lg:absolute lg:w-max lg:h-16 lg:top-0 lg:right-0 lg:bottom-auto lg:left-auto lg:rounded-tr-2xl lg:rounded-bl-2xl bg-zinc-800 border-slate-700 place-items-center">
-          <ul class="flex my-2 lg:my-4 sm:gap-5 lg:gap-6 xl:gap-8">
+    <div class="mt-4 flex w-full min-w-80 flex-col lg:relative xl:mx-10 xl:my-0">
+      <nav
+        class="navbar z-10 mb-2 flex justify-evenly h-12 place-items-center rounded-xl border-slate-700 bg-zinc-800 px-4 sm:w-max sm:self-end lg:absolute lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:h-16 lg:rounded-none lg:rounded-bl-2xl lg:rounded-tr-2xl lg:px-6 xl:top-16">
+        <ul class="my-2 flex w-2/3 flex-initial justify-evenly sm:w-auto sm:flex-none sm:gap-5 lg:my-4 lg:gap-6 xl:gap-8">
 
-            <li>
-              <button class="navbar-link text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>About</button>
-            </li>
+          <li>
+            <button
+              class="navbar-link text-xs text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-sm md:text-base lg:text-lg lg:font-medium"
+              data-nav-link>About</button>
+          </li>
 
-            <li>
-              <button class="navbar-link active text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>CV</button>
-            </li>
+          <li>
+            <button
+              class="navbar-link active text-xs text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-sm md:text-base lg:text-lg lg:font-medium"
+              data-nav-link>CV</button>
+          </li>
 
-            <li>
-              <button class="navbar-link text-xs sm:text-sm md:text-base lg:font-medium xl:text-lg text-slate-50 hover:text-slate-400 focus:text-orange-300" data-nav-link>Portfolio</button>
-            </li>
+          <li>
+            <button
+              class="navbar-link text-xs text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-sm md:text-base lg:text-lg lg:font-medium"
+              data-nav-link>Portfolio</button>
+          </li>
 
-          </ul>
+        </ul>
 
-          <div class="w-px lg:h-5/6 mx-4 bg-slate-700 "></div>
+        <div class="mx-5 h-5/6 w-px bg-slate-700"></div>
 
-          <ul class="flex my-2 lg:my-4 sm:gap-3">
+        <ul class="my-2 flex w-1/3 flex-initial justify-evenly sm:w-auto sm:flex-none sm:gap-4 lg:my-4">
 
-            <li>
-              <button class="text-xs sm:text-sm md:text-base lg:font-medium text-slate-50 hover:text-slate-400 focus:text-orange-300" href="index.html" onclick="changeLanguage('en')">English</button>
-            </li>
-  
-            <li>
-              <button class="text-xs sm:text-sm md:text-base lg:font-medium text-slate-50 hover:text-slate-400 focus:text-orange-300" href="index.html" onclick="changeLanguage('ja')">日本語</button>
-            </li>
-  
-          </ul>
-        </nav>
+          <li>
+            <button
+              class="text-xs text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-sm md:text-base lg:font-medium"
+              href="index.html" onclick="changeLanguage('en')">English</button>
+          </li>
+
+          <li>
+            <button
+              class="text-xs text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-sm md:text-base lg:font-medium"
+              href="index.html" onclick="changeLanguage('ja')">日本語</button>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="w-full rounded-2xl border border-slate-700 bg-zinc-900 p-4 sm:p-8 xl:relative xl:top-16">
 
         <article class="about" data-page="about">
           <header>
