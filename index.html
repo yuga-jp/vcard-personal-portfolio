@@ -25,27 +25,27 @@
 </head>
 
 <body class="flex flex-col align-middle">
-  <header class="sticky top-0 z-20 flex h-16 justify-evenly backdrop-blur-md md:mx-2 lg:mx-4">
+  <header class="sticky top-0 z-20 flex h-16 justify-center backdrop-blur-md md:mx-2 lg:mx-4">
     <div class="w-14 flex-none sm:w-20 md:w-52 lg:w-64 xl:w-48"></div>
-    <nav class="flex w-full place-items-center justify-evenly px-4 md:mx-4 lg:mx-8 xl:mx-10">
+    <nav class="flex w-full place-items-center justify-evenly px-4 md:mx-4 lg:mx-8 xl:mx-40 xl:w-max">
       <ul class="my-2 flex w-2/3 flex-initial justify-evenly sm:w-auto sm:flex-none sm:gap-5 lg:my-4 lg:gap-6 xl:gap-8">
 
         <li>
           <button
-            class="navbar-link text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
-            data-nav-link>About</button>
+            class="text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
+            data-home-nav="about">About</button>
         </li>
 
         <li>
           <button
-            class="navbar-link active text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
-            data-nav-link>CV</button>
+            class="active text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
+            data-home-nav="cv">CV</button>
         </li>
 
         <li>
           <button
-            class="navbar-link text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
-            data-nav-link>Portfolio</button>
+            class="text-sm text-slate-50 hover:text-slate-400 focus:text-orange-300 sm:text-base lg:text-lg lg:font-medium"
+            data-home-nav="portfolio">Portfolio</button>
         </li>
 
       </ul>
@@ -74,12 +74,20 @@
     <aside class="sticky top-16 h-max w-14 flex-none sm:w-20 md:hidden">
       <ul class="flex flex-col justify-start items-center">
 
-        <li class="flex h-12 w-12 items-center justify-center text-orange-300 text-2xl">
-          <i class="fa-solid fa-calendar-day"></i>
+        <li>
+          <button
+            class="flex h-12 w-12 items-center justify-center text-2xl text-slate-50 hover:text-slate-400 focus:text-orange-300"
+            data-side-nav="profile">
+            <i class="fa-solid fa-calendar-day"></i>
+          </button>
         </li>
 
-        <li class="flex h-12 w-12 items-center justify-center text-orange-300 text-2xl">
-          <i class="fa-solid fa-calendar-day"></i>
+        <li>
+          <button
+            class="active flex h-12 w-12 items-center justify-center text-2xl text-slate-50 hover:text-slate-400 focus:text-orange-300"
+            data-side-nav="home">
+            <i class="fa-solid fa-calendar-day"></i>
+          </button>
         </li>
 
         </div>
@@ -158,8 +166,78 @@
     </aside>
 
     <div class="max-w-screen-md rounded-2xl border border-slate-700 bg-zinc-900 p-4 sm:p-8 md:mx-4 lg:mx-8 xl:mx-10">
+      <article data-page-type="profile" data-page="profile">
+        <div class="flex flex-col items-center gap-4">
+          <figure class="bg-zinc-800 md:h-28 md:w-28 md:rounded-2xl lg:h-36 lg:w-36 lg:rounded-3xl">
+            <img alt="Yuga Sonda">
+          </figure>
 
-      <article class="about" data-page="about">
+          <div>
+            <h1
+              class="mb-2.5 text-base font-medium text-slate-50 sm:mb-4 sm:text-2xl xl:whitespace-nowrap xl:text-center"
+              data-i18n="name">Yuga Sonda</h1>
+
+            <p
+              class="w-max rounded-lg bg-zinc-800 px-3 py-1 text-xs font-light text-white sm:px-5 sm:py-1.5 xl:m-auto xl:text-sm">
+              Enginner, Student</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="my-4 h-px w-full bg-slate-700 sm:my-8"></div>
+
+        <ul class="grid grid-cols-1 gap-4 sm:gap-5 md:gap-x-4 md:gap-y-7">
+
+          <li class="flex min-w-full items-center gap-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-calendar-day"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="mb-0.5 text-xs text-gray-400 md:text-sm">BIRTHDAY</p>
+              <time class="lg:hidden" datetime="2001-11-23">Nov. 23, 2001</time>
+              <time class="hidden lg:block" datetime="2001-11-23">November 23, 2001</time>
+            </div>
+          </li>
+
+          <li class="flex min-w-full items-center gap-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="mb-0.5 text-xs text-gray-400 md:text-sm">LOCATION</p>
+              <address>Tokyo, Japan</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="my-3 h-px w-full bg-slate-700 md:opacity-0"></div>
+
+        <ul class="flex items-center justify-start gap-4 pb-1 pl-2 md:justify-center">
+
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="#" class="text-lg text-gray-400 hover:text-gray-300">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+        </ul>
+      </article>
+
+      <article class="about" data-page-type="home" data-page="about">
         <header>
           <h2 class="article-title">About me</h2>
         </header>
@@ -183,7 +261,7 @@
         </section>
       </article>
 
-      <article class="cv active" data-page="cv">
+      <article class="cv active" data-page-type="home" data-page="cv">
         <header>
           <h2 class="article-title">Curriculum Vitae</h2>
         </header>
@@ -341,7 +419,7 @@
         </section>
       </article>
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page-type="home" data-page="portfolio">
 
         <header>
           <h2 class="article-title">Portfolio</h2>
