@@ -176,20 +176,7 @@ h5 {
 }
 
 .sidebar {
-  overflow: hidden;
   transition: var(--transition-2);
-}
-
-.sidebar.active {
-  max-height: 405px;
-}
-
-.sidebar-info {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
 }
 
 .info_more-btn {
@@ -228,12 +215,6 @@ h5 {
 
 .info_more-btn span {
   display: none;
-}
-
-.sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-2);
 }
 
 .sidebar.active .sidebar-info_more {
