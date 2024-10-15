@@ -61,7 +61,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const sideNavigationItems = document.querySelectorAll("[data-side-nav]");
 const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
 const pageItems = document.querySelectorAll("[data-page-type]");
-let lastPageItem = homeNavigationItems[1].dataset.homeNav;
+let lastHomePageItem = homeNavigationItems[1].dataset.homeNav;
 
 for (const homeNavItem of homeNavigationItems) {
   homeNavItem.addEventListener("click", () => {
@@ -82,7 +82,7 @@ for (const homeNavItem of homeNavigationItems) {
     for (const page of pageItems) {
       if (page.dataset.page == homeNavItem.dataset.homeNav) {
         page.classList.add("active");
-        lastPageItem = page.dataset.page;
+        lastHomePageItem = page.dataset.page;
       } else {
         page.classList.remove("active");
       }
@@ -101,14 +101,14 @@ for (const sideNavItem of sideNavigationItems) {
     }
     if (sideNavItem.dataset.sideNav == "home") {
       for (const page of pageItems) {
-        if (page.dataset.page == lastPageItem) {
+        if (page.dataset.page == lastHomePageItem) {
           page.classList.add("active");
         } else {
           page.classList.remove("active");
         }
       }
       for (const homeNavItem of homeNavigationItems) {
-        if (homeNavItem.dataset.homeNav == lastPageItem) {
+        if (homeNavItem.dataset.homeNav == lastHomePageItem) {
           homeNavItem.classList.add("active");
         }
       }
