@@ -590,6 +590,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-0\.5 {
   margin-bottom: 0.125rem;
 }
@@ -714,6 +719,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-evenly {
@@ -1600,9 +1609,19 @@ h5 {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.hover\:text-orange-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .hover\:text-slate-400:hover {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.hover\:text-orange-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
 .focus\:text-orange-300:focus {
@@ -1636,8 +1655,20 @@ h5 {
     width: auto;
   }
 
+  .sm\:w-16 {
+    width: 4rem;
+  }
+
   .sm\:flex-none {
     flex: none;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
   }
 
   .sm\:gap-4 {
@@ -1646,6 +1677,18 @@ h5 {
 
   .sm\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .sm\:gap-16 {
+    gap: 4rem;
   }
 
   .sm\:p-8 {
@@ -1730,12 +1773,28 @@ h5 {
     line-height: 1.25rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
+  }
+
   .md\:opacity-0 {
     opacity: 0;
   }
 }
 
 @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    .lg\:md\:mx-4 {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
   .lg\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1749,6 +1808,11 @@ h5 {
   .lg\:my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .lg\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .lg\:mb-10 {
@@ -1821,6 +1885,11 @@ h5 {
     margin-right: 10rem;
   }
 
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -1844,6 +1913,10 @@ h5 {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-20 {
+    gap: 5rem;
   }
 
   .xl\:whitespace-nowrap {
