@@ -60,72 +60,98 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 const sideNavigationItems = document.querySelectorAll("[data-side-nav]");
 const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
-const pageItems = document.querySelectorAll("[data-page-type]");
-let lastHomePageItem = homeNavigationItems[1].dataset.homeNav;
+const profilePage = document.querySelector("#page-profile");
+const homePages = document.querySelectorAll("[data-page-type='home']");
+let lastHomePage = document.querySelector("#page-cv");
+let viewingPage = document.querySelector("#page-cv");
 
 for (const homeNavItem of homeNavigationItems) {
   homeNavItem.addEventListener("click", () => {
     for (const item of homeNavigationItems) {
-      if (item == homeNavItem) {
+      if (item === homeNavItem) {
         item.classList.add("active");
       } else {
         item.classList.remove("active");
       }
     }
     for (const sideNavItem of sideNavigationItems) {
-      if (sideNavItem.dataset.sideNav != "home") {
-        sideNavItem.classList.remove("active");
-      } else {
+      if (sideNavItem.dataset.sideNav === "home") {
         sideNavItem.classList.add("active");
+      } else {
+        sideNavItem.classList.remove("active");
       }
     }
-    for (const page of pageItems) {
-      if (page.dataset.page == homeNavItem.dataset.homeNav) {
+    for (const page of homePages) {
+      if (page.dataset.page === homeNavItem.dataset.homeNav) {
         page.classList.add("active");
-        lastHomePageItem = page.dataset.page;
+        viewingPage = page;
+        lastHomePage = page;
       } else {
         page.classList.remove("active");
       }
     }
+    profilePage.classList.remove("active");
   });
 }
 
 for (const sideNavItem of sideNavigationItems) {
   sideNavItem.addEventListener("click", () => {
     for (const item of sideNavigationItems) {
-      if (item == sideNavItem) {
+      if (item === sideNavItem) {
         item.classList.add("active");
       } else {
         item.classList.remove("active");
       }
     }
     if (sideNavItem.dataset.sideNav == "home") {
-      for (const page of pageItems) {
-        if (page.dataset.page == lastHomePageItem) {
+      for (const page of homePages) {
+        if (page === lastHomePage) {
           page.classList.add("active");
-        } else {
-          page.classList.remove("active");
+          viewingPage = page;
         }
       }
       for (const homeNavItem of homeNavigationItems) {
-        if (homeNavItem.dataset.homeNav == lastHomePageItem) {
+        if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
           homeNavItem.classList.add("active");
         }
       }
+      profilePage.classList.remove("active");
     } else {
       for (const homeNavItem of homeNavigationItems) {
         homeNavItem.classList.remove("active");
       }
-      for (const page of pageItems) {
-        if (page.dataset.pageType == sideNavItem.dataset.sideNav) {
-          page.classList.add("active");
-        } else {
-          page.classList.remove("active");
-        }
+      for (const page of homePages) {
+        page.classList.remove("active");
       }
+      profilePage.classList.add("active");
+      viewingPage = profilePage;
     }
   });
 }
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && viewingPage.id === "page-profile") {
+    profilePage.classList.remove("active");
+    for (const sideNavItem of sideNavigationItems) {
+      if (sideNavItem.dataset.sideNav === "home") {
+        sideNavItem.classList.add("active");
+      } else {
+        sideNavItem.classList.remove("active");
+      }
+    }
+    for (const homeNavItem of homeNavigationItems) {
+      if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
+        homeNavItem.classList.add("active");
+      }
+    }
+    for (const page of homePages) {
+      if (page === lastHomePage) {
+        page.classList.add("active");
+        viewingPage = page;
+      }
+    }
+  }
+});
 
 // Function to update content based on selected language
 function updateContent(langData) {
