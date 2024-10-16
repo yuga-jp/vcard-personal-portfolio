@@ -171,6 +171,23 @@ addEventListener("click", (event) => {
   }
 });
 
+addEventListener("touchstart", (event) => {
+  const target = event.target;
+  let bool = false;
+  for (const child of langButtton.children) {
+    if (target === child) {
+      bool = true;
+    }
+  }
+  if (target === langButtton || target === langMenu) {
+    bool = true;
+  }
+  if (!bool) {
+    langMenu.classList.add("hidden");
+    langMenu.classList.remove("flex");
+  }
+});
+
 // Function to update content based on selected language
 function updateContent(langData) {
   document.querySelectorAll('[data-i18n]').forEach(element => {
