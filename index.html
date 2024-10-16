@@ -23,12 +23,26 @@
 
   <!-- Material Symbols -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=badge,event,history_edu,home,location_on,person&display=block"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=arrow_drop_down,badge,event,history_edu,home,language,location_on,person&display=block"
     rel="stylesheet">
 </head>
 
 <body class="flex flex-col align-middle bg-neutral-900">
   <header class="sticky top-0 z-20 flex h-12 justify-center backdrop-blur-md md:mx-2 md:h-16 lg:mx-4">
+    <div class="fixed left-2 sm:left-10 top-2 md:hidden">
+      <button id="lang-button"
+        class="flex h-8 w-max items-center rounded-full border border-slate-700 text-sm text-slate-50 sm:pl-3 sm:pr-1 pl-2"
+        type="button">
+        <span class="material-symbols-outlined">language</span>
+        <span class="material-symbols-outlined">arrow_drop_down</span>
+      </button>
+      <div id="lang-menu"
+        class="absolute top-full mt-2 hidden w-20 flex-col items-start rounded-lg px-2 py-2 text-sm text-slate-50 shadow ring-1 backdrop-blur-md"
+        tabindex="0">
+        <button class="py-2">English</button>
+        <button class="py-2">日本語</button>
+      </div>
+    </div>
     <nav class="flex w-12 flex-none place-items-center justify-end sm:w-16 md:mx-2 md:w-52 lg:mx-4 lg:w-64 xl:w-48">
       <ul class="hidden justify-center gap-6 md:flex xl:hidden">
 
@@ -44,7 +58,8 @@
 
       </ul>
     </nav>
-    <nav class="mx-1 flex w-full max-w-screen-md place-items-center justify-center px-4 md:mx-2 lg:mx-4 xl:mx-40 xl:w-max">
+    <nav
+      class="mx-1 flex w-full max-w-screen-md place-items-center justify-center px-4 md:mx-2 lg:mx-4 xl:mx-40 xl:w-max">
       <ul class="flex w-2/3 justify-between sm:w-auto sm:flex-none sm:justify-center sm:gap-16">
 
         <li>
@@ -69,13 +84,13 @@
       <ul class="xl:flex xl:justify-center xl:gap-6">
 
         <li>
-          <button class="text-sm text-slate-50 hover:text-orange-300 sm:text-base lg:text-lg"
-            href="index.html" data-i18n-nav="english">English</button>
+          <button class="text-sm text-slate-50 hover:text-orange-300 sm:text-base lg:text-lg" href="index.html"
+            data-i18n-nav="english">English</button>
         </li>
 
         <li>
-          <button class="text-sm text-slate-50 hover:text-orange-300 sm:text-base lg:text-lg"
-            href="index.html" data-i18n-nav="japanese">日本語</button>
+          <button class="text-sm text-slate-50 hover:text-orange-300 sm:text-base lg:text-lg" href="index.html"
+            data-i18n-nav="japanese">日本語</button>
         </li>
 
       </ul>
@@ -170,7 +185,7 @@
 
     <div
       class="mx-1 w-full max-w-screen-md rounded-2xl border border-slate-700 bg-zinc-900 p-4 sm:p-8 md:mx-2 lg:mx-4 xl:mx-10">
-      <article id="page-profile" data-page-type="profile" data-page="profile">
+      <article id="page-profile" class="py-2" data-page-type="profile" data-page="profile">
         <div class="flex flex-col items-center gap-4">
           <figure class="h-44 w-44 rounded-3xl bg-zinc-800 sm:h-52 sm:w-52">
             <img alt="Yuga Sonda">
