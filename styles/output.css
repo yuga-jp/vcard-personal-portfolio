@@ -554,10 +554,6 @@ video {
   display: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -566,24 +562,20 @@ video {
   position: sticky;
 }
 
-.left-2 {
-  left: 0.5rem;
+.right-0 {
+  right: 0px;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.top-12 {
-  top: 3rem;
+.top-14 {
+  top: 3.5rem;
 }
 
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-full {
-  top: 100%;
+.top-16 {
+  top: 4rem;
 }
 
 .z-10 {
@@ -597,6 +589,11 @@ video {
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-3 {
@@ -617,10 +614,6 @@ video {
   margin-bottom: 0.625rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .block {
   display: block;
 }
@@ -637,16 +630,12 @@ video {
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-44 {
   height: 11rem;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .h-max {
@@ -656,14 +645,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .w-20 {
@@ -676,6 +657,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .w-52 {
@@ -725,10 +710,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1654,8 +1635,9 @@ h5 {
 }
 
 @media (min-width: 640px) {
-  .sm\:left-10 {
-    left: 2.5rem;
+  .sm\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .sm\:my-8 {
@@ -1669,10 +1651,6 @@ h5 {
 
   .sm\:h-52 {
     height: 13rem;
-  }
-
-  .sm\:w-16 {
-    width: 4rem;
   }
 
   .sm\:w-52 {
@@ -1733,14 +1711,6 @@ h5 {
 }
 
 @media (min-width: 768px) {
-  .md\:top-16 {
-    top: 4rem;
-  }
-
-  .md\:top-6 {
-    top: 1.5rem;
-  }
-
   .md\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -1762,20 +1732,12 @@ h5 {
     display: none;
   }
 
-  .md\:h-16 {
-    height: 4rem;
-  }
-
   .md\:h-28 {
     height: 7rem;
   }
 
   .md\:w-28 {
     width: 7rem;
-  }
-
-  .md\:w-52 {
-    width: 13rem;
   }
 
   .md\:gap-x-4 {

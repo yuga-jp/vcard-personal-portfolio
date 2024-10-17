@@ -51,7 +51,7 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 }
 
-const sideNavigationItems = document.querySelectorAll("[data-side-nav]");
+const profileNavigation = document.querySelector("#navigation-profile");
 const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
 const profilePage = document.querySelector("#page-profile");
 const homePages = document.querySelectorAll("[data-page-type='home']");
@@ -67,13 +67,7 @@ for (const homeNavItem of homeNavigationItems) {
         item.classList.remove("active");
       }
     }
-    for (const sideNavItem of sideNavigationItems) {
-      if (sideNavItem.dataset.sideNav === "home") {
-        sideNavItem.classList.add("active");
-      } else {
-        sideNavItem.classList.remove("active");
-      }
-    }
+    profileNavigation.classList.remove("active");
     for (const page of homePages) {
       if (page.dataset.page === homeNavItem.dataset.homeNav) {
         page.classList.add("active");
@@ -87,51 +81,24 @@ for (const homeNavItem of homeNavigationItems) {
   });
 }
 
-for (const sideNavItem of sideNavigationItems) {
-  sideNavItem.addEventListener("click", () => {
-    for (const item of sideNavigationItems) {
-      if (item === sideNavItem) {
-        item.classList.add("active");
-      } else {
-        item.classList.remove("active");
-      }
-    }
-    if (sideNavItem.dataset.sideNav == "home") {
-      for (const page of homePages) {
-        if (page === lastHomePage) {
-          page.classList.add("active");
-          viewingPage = page;
-        }
-      }
-      for (const homeNavItem of homeNavigationItems) {
-        if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
-          homeNavItem.classList.add("active");
-        }
-      }
-      profilePage.classList.remove("active");
-    } else {
-      for (const homeNavItem of homeNavigationItems) {
-        homeNavItem.classList.remove("active");
-      }
-      for (const page of homePages) {
-        page.classList.remove("active");
-      }
-      profilePage.classList.add("active");
-      viewingPage = profilePage;
-    }
-  });
-}
+profileNavigation.addEventListener("click", () => {
+  profileNavigation.classList.add("active");
+
+  for (const homeNavItem of homeNavigationItems) {
+    homeNavItem.classList.remove("active");
+  }
+  for (const page of homePages) {
+    page.classList.remove("active");
+  }
+  profilePage.classList.add("active");
+  viewingPage = profilePage;
+});
 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 768 && viewingPage.id === "page-profile") {
     profilePage.classList.remove("active");
-    for (const sideNavItem of sideNavigationItems) {
-      if (sideNavItem.dataset.sideNav === "home") {
-        sideNavItem.classList.add("active");
-      } else {
-        sideNavItem.classList.remove("active");
-      }
-    }
+    profileNavigation.classList.remove("active");
+
     for (const homeNavItem of homeNavigationItems) {
       if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
         homeNavItem.classList.add("active");
@@ -167,7 +134,7 @@ addEventListener("click", (event) => {
   }
   if (!bool) {
     langMenu.classList.add("hidden");
-    langMenu.classList.remove("flex"); 
+    langMenu.classList.remove("flex");
   }
 });
 
