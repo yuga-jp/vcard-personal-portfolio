@@ -45,7 +45,8 @@
       </ul>
     </nav>
 
-    <button id="navigation-profile" class="mx-2 flex w-20 items-center justify-center text-2xl text-slate-50 hover:text-orange-300 sm:mx-4 md:hidden">
+    <button id="navigation-profile"
+      class="mx-2 flex w-20 items-center justify-center text-2xl text-slate-50 hover:text-orange-300 sm:mx-4 md:hidden">
       <span class="material-symbols-outlined">person</span>
     </button>
 
@@ -89,7 +90,7 @@
 
     <div class="mx-2 flex w-20 place-items-center items-center sm:mx-4 md:hidden">
       <button id="lang-button"
-        class="flex w-full items-center rounded-full border border-slate-700 pl-2 text-sm text-slate-50 sm:pl-3 sm:pr-1"
+        class="flex h-8 w-full items-center rounded-full border border-slate-700 pl-2 text-sm text-slate-50 sm:pl-3 sm:pr-1"
         type="button">
         <span class="material-symbols-outlined">language</span>
         <span class="material-symbols-outlined">arrow_drop_down</span>
@@ -129,10 +130,12 @@
             <span class="material-symbols-outlined">event</span>
           </div>
 
-          <div class="contact-info">
-            <p class="mb-0.5 text-xs text-gray-400 md:text-sm">BIRTHDAY</p>
-            <time class="lg:hidden" datetime="2001-11-23">Nov. 23, 2001</time>
-            <time class="hidden lg:block" datetime="2001-11-23">November 23, 2001</time>
+          <div>
+            <p class="mb-0.5 text-sm text-gray-400">BIRTHDAY</p>
+            <time class="text-base text-slate-50 lg:hidden" datetime="2001-11-23">Nov. 23,
+              2001</time>
+            <time class="hidden text-base text-slate-50 lg:block" datetime="2001-11-23">November
+              23, 2001</time>
           </div>
         </li>
 
@@ -141,9 +144,9 @@
             <span class="material-symbols-outlined">location_on</span>
           </div>
 
-          <div class="contact-info">
-            <p class="mb-0.5 text-xs text-gray-400 md:text-sm">LOCATION</p>
-            <address>Tokyo, Japan</address>
+          <div>
+            <p class="mb-0.5 text-sm text-gray-400">LOCATION</p>
+            <address class="text-base not-italic text-slate-50">Tokyo, Japan</address>
           </div>
         </li>
 
@@ -178,11 +181,10 @@
           </figure>
 
           <div>
-            <h1 class="mb-2.5 text-center text-base font-medium text-slate-50 sm:mb-4 sm:text-2xl"
-              data-i18n="name">Yuga Sonda</h1>
+            <h1 class="mb-2.5 text-center text-base font-medium text-slate-50 sm:mb-4 sm:text-2xl" data-i18n="name">Yuga
+              Sonda</h1>
 
-            <p
-              class="w-max rounded-lg bg-zinc-800 px-3 py-1 text-xs font-light text-white sm:px-5 sm:py-1.5">
+            <p class="w-max rounded-lg bg-zinc-800 px-3 py-1 text-xs font-light text-white sm:px-5 sm:py-1.5">
               Enginner, Student</p>
           </div>
 
@@ -197,10 +199,10 @@
               <span class="material-symbols-outlined">event</span>
             </div>
 
-            <div class="contact-info">
-              <p class="mb-0.5 text-xs text-gray-400">BIRTHDAY</p>
-              <time class="lg:hidden" datetime="2001-11-23">November 23, 2001</time>
-              <time class="hidden lg:block" datetime="2001-11-23">November 23, 2001</time>
+            <div>
+              <p class="mb-0.5 text-sm text-gray-400">BIRTHDAY</p>
+              <time class="text-sm text-slate-50" datetime="2001-11-23">November
+                23, 2001</time>
             </div>
           </li>
 
@@ -209,9 +211,9 @@
               <span class="material-symbols-outlined">location_on</span>
             </div>
 
-            <div class="contact-info">
-              <p class="mb-0.5 text-xs text-gray-400">LOCATION</p>
-              <address>Tokyo, Japan</address>
+            <div>
+              <p class="mb-0.5 text-sm text-gray-400">LOCATION</p>
+              <address class="text-sm not-italic text-slate-50">Tokyo, Japan</address>
             </div>
           </li>
 
@@ -238,7 +240,9 @@
 
       <article id="page-about" class="about" data-page-type="home" data-page="about">
         <header>
-          <h2 class="article-title">About me</h2>
+          <h2
+            class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
+            About me</h2>
         </header>
 
         <section class="about-text">
@@ -262,7 +266,8 @@
 
       <article id="page-cv" class="cv active" data-page-type="home" data-page="cv">
         <header>
-          <h2 class="article-title">Curriculum Vitae</h2>
+          <h2 class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">Curriculum Vitae
+          </h2>
         </header>
 
         <section class="timeline">
@@ -421,7 +426,7 @@
       <article id="page-portfolio" class="portfolio" data-page-type="home" data-page="portfolio">
 
         <header>
-          <h2 class="article-title">Portfolio</h2>
+          <h2 class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -626,7 +631,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
