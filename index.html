@@ -27,7 +27,7 @@
     rel="stylesheet">
 </head>
 
-<body class="flex flex-col align-middle bg-neutral-900">
+<body class="flex flex-col align-middle bg-neutral-850">
   <header class="sticky top-0 z-20 flex h-16 justify-center backdrop-blur-md md:mx-2 lg:mx-4">
     <nav class="mx-2 hidden w-52 flex-none place-items-center justify-end md:flex lg:mx-4 lg:w-64 xl:w-48">
       <ul class="hidden justify-center gap-6 md:flex xl:hidden">
@@ -105,7 +105,7 @@
 
   <main class="flex justify-center md:mx-2 md:mb-6 lg:mx-4 lg:mb-10">
     <aside
-      class="sticky top-16 mx-2 hidden h-max w-52 flex-none rounded-2xl border border-slate-700 bg-zinc-900 px-4 py-6 md:block lg:mx-4 lg:w-64 lg:px-6 lg:pb-8 lg:pt-12 xl:mx-0">
+      class="sticky top-16 mx-2 hidden h-max w-52 flex-none rounded-2xl border border-slate-700 bg-neutral-850 px-4 py-6 md:block lg:mx-4 lg:w-64 lg:px-6 lg:pb-8 lg:pt-12 xl:mx-0">
       <div class="flex flex-col items-center gap-4">
         <figure class="bg-zinc-800 md:h-28 md:w-28 md:rounded-2xl lg:h-36 lg:w-36 lg:rounded-3xl">
           <img alt="Yuga Sonda">
@@ -126,7 +126,7 @@
       <ul class="grid grid-cols-1 gap-4 sm:gap-5 md:gap-x-4 md:gap-y-7">
 
         <li class="flex min-w-full items-center gap-4">
-          <div class="icon-box">
+          <div class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
             <span class="material-symbols-outlined">event</span>
           </div>
 
@@ -140,7 +140,7 @@
         </li>
 
         <li class="flex min-w-full items-center gap-4">
-          <div class="icon-box">
+          <div class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
             <span class="material-symbols-outlined">location_on</span>
           </div>
 
@@ -179,8 +179,8 @@
     </aside>
 
     <div
-      class="mx-1 w-full max-w-screen-md rounded-2xl border border-slate-700 bg-zinc-900 p-4 sm:p-8 md:mx-2 lg:mx-4 xl:mx-10">
-      <article id="page-profile" class="py-2" data-page-type="profile" data-page="profile">
+      class="mx-1 w-full max-w-screen-md rounded-2xl border border-slate-700 bg-neutral-850 p-4 sm:p-8 md:mx-2 lg:mx-4 xl:mx-10">
+      <article id="page-profile" class="py-2">
         <div class="flex flex-col items-center gap-4">
           <figure class="h-44 w-44 rounded-3xl bg-zinc-800 sm:h-52 sm:w-52">
             <img alt="Yuga Sonda">
@@ -201,7 +201,7 @@
         <ul class="grid grid-cols-1 gap-4 sm:gap-5">
 
           <li class="flex min-w-full items-center gap-4">
-            <div class="icon-box">
+            <div class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
               <span class="material-symbols-outlined">event</span>
             </div>
 
@@ -213,7 +213,7 @@
           </li>
 
           <li class="flex min-w-full items-center gap-4">
-            <div class="icon-box">
+            <div class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
               <span class="material-symbols-outlined">location_on</span>
             </div>
 
@@ -254,18 +254,19 @@
         <header>
           <h2
             class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
-            About me</h2>
+            About me
+          </h2>
         </header>
 
-        <section class="about-text">
-          <p>
+        <section class="sm:mb-10">
+          <p class="mb-4 text-sm font-light leading-relaxed text-gray-300 sm:text-base">
             I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print
             media.
             I enjoy
             turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
-          <p>
+          <p class="mb-4 text-sm font-light leading-relaxed text-gray-300 sm:text-base">
             My job is to build your website so that it is functional and user-friendly but at the same time
             attractive.
             Moreover, I
@@ -284,16 +285,17 @@
           </h2>
         </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <span class="material-symbols-outlined">history_edu</span>
+        <section class="timeline mb-7">
+          <div class="mb-6 flex items-center gap-4">
+            <div
+              class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
+              <span class="material-symbols-outlined z-10">history_edu</span>
             </div>
 
             <h3>Education</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list ml-11 text-sm sm:ml-16 sm:text-base">
 
             <li class="timeline-item">
               <h4 class="timeline-item-title">The University of Tokyo</h4>
@@ -334,16 +336,16 @@
           </ol>
         </section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
+        <section class="timeline mb-7">
+          <div class="mb-6 flex items-center gap-4">
+            <div class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
               <span class="material-symbols-outlined">badge</span>
             </div>
 
             <h3>Experience</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list ml-11 text-sm sm:ml-16 sm:text-base">
 
             <li class="timeline-item">
               <h4 class="timeline-item-title">Creative director</h4>
