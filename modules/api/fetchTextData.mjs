@@ -1,5 +1,5 @@
 async function fetchTextData(lang) {
-  const response = await fetch("../../../assets/texts/" + lang + ".json");
+  const response = await fetch("./assets/texts/" + lang + ".json");
 
   if (!response.ok) {
     throw new Error("Error fetching language data. Language: " + lang + ", Status: " + response.status);
