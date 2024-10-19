@@ -1,0 +1,44 @@
+{
+  "name": "Yuga Sonda",
+  "name_ja": "孫田 悠河",
+  "education": [
+    {
+      "title": "The University of Tokyo",
+      "start": "2025.4",
+      "end": null,
+      "content": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+    },
+    {
+      "title": "Keio University",
+      "start": "2021.4",
+      "end": "2025.3",
+      "content": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus omnis voluptas assumenda est omnis.."
+    },
+    {
+      "title": "Shiba Senior High School",
+      "start": "2017.4",
+      "end": "2020.3",
+      "content": "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Google",
+      "start": "2015",
+      "end": "Present",
+      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+    },
+    {
+      "title": "Facebook",
+      "start": "2013",
+      "end": "2015",
+      "content": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+    },
+    {
+      "title": "Amazon",
+      "start": "2010",
+      "end": "2013",
+      "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius."
+    }
+  ]
+}
