@@ -123,64 +123,6 @@ h5 {
   font-weight: var(--fw-500);
 }
 
-.content-card {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 15px;
-  padding-top: 45px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  cursor: pointer;
-  z-index: 1;
-}
-
-.content-card::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-/**
- * skills 
- */
-
-.skills-list {
-  padding: 20px;
-}
-
-.skills-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
-}
-
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
-}
-
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
-}
-
 .filter-list {
   display: none;
 }
@@ -389,14 +331,6 @@ h5 {
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-  }
-
-  /**
-   * #CV
-   */
-
-  .skills-item:not(:last-child) {
-    margin-bottom: 25px;
   }
 
   /**

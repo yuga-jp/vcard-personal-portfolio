@@ -566,10 +566,6 @@ video {
   position: sticky;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -584,54 +580,6 @@ video {
 
 .top-16 {
   top: 4rem;
-}
-
-.-left-2 {
-  left: -0.5rem;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
-.-left-px {
-  left: -1px;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-0\.5 {
-  left: 0.125rem;
-}
-
-.left-px {
-  left: 1px;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[10\%\] {
-  left: 10%;
-}
-
-.left-\[5\%\] {
-  left: 5%;
-}
-
-.left-\[1\%\] {
-  left: 1%;
-}
-
-.left-\[0\%\] {
-  left: 0%;
 }
 
 .z-10 {
@@ -662,8 +610,17 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-0\.5 {
   margin-bottom: 0.125rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -694,28 +651,20 @@ video {
   margin-left: 2.75rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .mr-1\.5 {
   margin-right: 0.375rem;
+}
+
+.mr-px {
+  margin-right: 1px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -734,8 +683,8 @@ video {
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
+.h-0 {
+  height: 0px;
 }
 
 .h-16 {
@@ -754,8 +703,8 @@ video {
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
+.h-auto {
+  height: auto;
 }
 
 .h-max {
@@ -767,20 +716,16 @@ video {
   height: 1px;
 }
 
-.h-10 {
-  height: 2.5rem;
+.w-0 {
+  width: 0px;
 }
 
-.h-0 {
-  height: 0px;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-12 {
   width: 3rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-20 {
@@ -807,6 +752,14 @@ video {
   width: 2rem;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[39px\] {
+  width: 39px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -814,14 +767,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-0 {
-  width: 0px;
 }
 
 .min-w-full {
@@ -852,6 +797,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -864,10 +813,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -878,10 +823,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -920,32 +861,9 @@ video {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-t-4 {
-  border-top-width: 4px;
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
-}
-
-.border-t-blue-500 {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-neutral-850 {
@@ -1070,10 +988,6 @@ video {
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .not-italic {
@@ -1258,64 +1172,6 @@ h4 {
 h5 {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
-}
-
-.content-card {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 15px;
-  padding-top: 45px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  cursor: pointer;
-  z-index: 1;
-}
-
-.content-card::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-/**
- * skills 
- */
-
-.skills-list {
-  padding: 20px;
-}
-
-.skills-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
-}
-
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
-}
-
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
 }
 
 .filter-list {
@@ -1526,14 +1382,6 @@ h5 {
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-  }
-
-  /**
-   * #CV
-   */
-
-  .skills-item:not(:last-child) {
-    margin-bottom: 25px;
   }
 
   /**
