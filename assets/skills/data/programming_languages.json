@@ -1,0 +1,58 @@
+{
+  "contents": [
+    {
+      "name": "C++",
+      "progress": 75,
+      "imageWidth": 39,
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginBottom": 0,
+      "marginLeft": 0
+    },
+    {
+      "name": "Dart",
+      "progress": 70,
+      "imageWidth": 40,
+      "marginTop": 0,
+      "marginRight": 4,
+      "marginBottom": 2,
+      "marginLeft": 0
+    },
+    {
+      "name": "HTML",
+      "progress": 85,
+      "imageWidth": 48,
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginBottom": 2,
+      "marginLeft": 0
+    },
+    {
+      "name": "JavaScript",
+      "progress": 55,
+      "imageWidth": 36,
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginBottom": 0,
+      "marginLeft": 0
+    },
+    {
+      "name": "Python",
+      "progress": 45,
+      "imageWidth": 40,
+      "marginTop": 8,
+      "marginRight": 0,
+      "marginBottom": 0,
+      "marginLeft": 0
+    },
+    {
+      "name": "TypeScript",
+      "progress": 40,
+      "imageWidth": 36,
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginBottom": 0,
+      "marginLeft": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "contents": [
+    {
+      "name": "Flutter",
+      "progress": 85,
+      "imageWidth": 32,
+      "marginTop": 0,
+      "marginRight": 6,
+      "marginBottom": 0,
+      "marginLeft": 0
+    },
+    {
+      "name": "Tailwind CSS",
+      "progress": 80,
+      "imageWidth": 40,
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginBottom": 0,
+      "marginLeft": 0
+    }
+  ]
+}
