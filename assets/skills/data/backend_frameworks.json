@@ -2,10 +2,11 @@
   "contents": [
     {
       "name": "Prisma",
+      "format": "svg",
       "progress": 30,
-      "imageWidth": 36,
-      "marginTop": 0,
-      "marginRight": 1,
+      "imageWidth": 26,
+      "marginTop": 1.5,
+      "marginRight": 0,
       "marginBottom": 0,
       "marginLeft": 0
     }

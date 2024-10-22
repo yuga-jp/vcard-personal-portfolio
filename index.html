@@ -315,8 +315,15 @@
           <ol id="experience" class="ml-11 text-sm sm:ml-16 sm:text-base"></ol>
         </section>
 
-        <section class="skill">
-          <h3 class="mb-5">My skills</h3>
+        <section class="mb-7">
+          <div class="mb-6 flex items-center gap-4">
+            <div
+              class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
+              <span class="material-symbols-outlined z-10">badge</span>
+            </div>
+
+            <h3>My skills</h3>
+          </div>
 
           <svg class="h-0 w-0">
             <defs>
@@ -329,131 +336,18 @@
 
           <div class="mb-10">
             <h4>Programming Languages</h4>
-            <ul class="my-5 flex w-full flex-wrap justify-center gap-5">
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(85 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="skill-img h-auto w-[39px] z-10" src="./assets/skills/C++.svg" alt="C++" />
-                </div>
-              </li>
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="mr-1 mb-0.5 h-auto w-10" src="./assets/skills/Dart.svg" alt="Dart" />
-                </div>
-              </li>
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="mb-0.5 h-auto w-12" src="./assets/skills/HTML.svg" alt="HTML" />
-                </div>
-              </li>
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="h-auto w-9" src="./assets/skills/JavaScript.png" alt="JavaScript" />
-                </div>
-              </li>
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="mt-2 h-auto w-10" src="./assets/skills/Python.svg" alt="Python" />
-                </div>
-              </li>
-
-              <li class="flex items-center">
-                <div
-                  class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                  <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                    <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                      stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000"
-                      stroke-dashoffset="0" stroke-linecap="round" stroke-width="4" />
-                  </svg>
-                  <img class="h-auto w-9" src="./assets/skills/TypeScript.svg" alt="TypeScript" />
-                </div>
-              </li>
-
-            </ul>
+            <ul id="programming_languages" class="my-5 flex flex-wrap justify-center gap-5"></ul>
           </div>
 
-          <h4>Frontend Frameworks</h4>
+          <div class="mb-10">
+            <h4>Frontend Frameworks</h4>
+            <ul id="frontend_frameworks" class="my-5 flex flex-wrap justify-center gap-5"></ul>
+          </div>
 
-          <ul class="flex justify-center gap-5">
-
-            <li class="flex items-center">
-              <div
-                class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                  <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                    stroke="url('#gradient-1')" stroke-dasharray="calc(75 / 100 * 90% * pi) 1000" stroke-dashoffset="0"
-                    stroke-linecap="round" stroke-width="4" />
-                </svg>
-                <img class="mr-1.5 h-auto w-8" src="./assets/skills/Flutter.svg" alt="Flutter" />
-              </div>
-            </li>
-
-            <li class="flex items-center">
-              <div
-                class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                  <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                    stroke="url('#gradient-1')" stroke-dasharray="calc(75 / 100 * 90% * pi) 1000" stroke-dashoffset="0"
-                    stroke-linecap="round" stroke-width="4" />
-                </svg>
-                <img class="h-auto w-10" src="./assets/skills/Tailwind CSS.svg" alt="Tailwind CSS" />
-              </div>
-            </li>
-
-          </ul>
-
-          <h4>Backend Frameworks</h4>
-
-          <ul class="flex justify-center gap-5">
-
-            <li class="flex items-center">
-              <div
-                class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900">
-                <svg class="absolute z-20" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
-                  <circle cx="50%" cy="50%" r="45%" transform="rotate(-90, 50, 50)" fill="none"
-                    stroke="url('#gradient-1')" stroke-dasharray="calc(50 / 100 * 90% * pi) 1000" stroke-dashoffset="0"
-                    stroke-linecap="round" stroke-width="4" />
-                </svg>
-                <img class="mr-px h-auto w-9" src="./assets/skills/Prisma.svg" alt="Prisma" />
-              </div>
-            </li>
-
-          </ul>
-
+          <div>
+            <h4>Backend Frameworks</h4>
+            <ul id="backend_frameworks" class="my-5 flex flex-wrap justify-center gap-5"></ul>
+          </div>
         </section>
       </article>
 

@@ -2,17 +2,19 @@
   "contents": [
     {
       "name": "Flutter",
+      "format": "svg",
       "progress": 85,
-      "imageWidth": 32,
+      "imageWidth": 23,
       "marginTop": 0,
-      "marginRight": 6,
+      "marginRight": 4,
       "marginBottom": 0,
       "marginLeft": 0
     },
     {
       "name": "Tailwind CSS",
+      "format": "svg",
       "progress": 80,
-      "imageWidth": 40,
+      "imageWidth": 32,
       "marginTop": 0,
       "marginRight": 0,
       "marginBottom": 0,

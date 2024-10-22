@@ -1,5 +1,7 @@
 "use strict";
 import setTextData from "./modules/setTextData.mjs";
+import setSkills from "./modules/setSkills.mjs";
+import updateSkills from "./modules/updateSkills.mjs";
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -95,8 +97,10 @@ profileNavigation.addEventListener("click", () => {
   viewingPage = profilePage;
 });
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768 && viewingPage.id === "page-profile") {
+
+
+addEventListener("resize", () => {
+  if (window.innerWidth >= 768 && viewingPage.id === "page-profile") {
     profilePage.classList.remove("active");
     profileNavigation.classList.remove("active");
 
@@ -158,4 +162,27 @@ addEventListener("touchstart", (event) => {
 
 addEventListener("load", () => {
   setTextData("en");
+  if (innerWidth >= 640) {
+    setSkills("programming_languages", 72 / 56);
+    setSkills("frontend_frameworks", 72 / 56);
+    setSkills("backend_frameworks", 72 / 56);
+  } else {
+    setSkills("programming_languages", 1.0);
+    setSkills("frontend_frameworks", 1.0);
+    setSkills("backend_frameworks", 1.0);
+  }
+});
+
+const mql_640 = window.matchMedia("(min-width: 640px)");
+
+mql_640.addEventListener("change", (e) => {
+  if (e.matches) {
+    updateSkills("programming_languages", 72 / 56);
+    updateSkills("frontend_frameworks", 72 / 56);
+    updateSkills("backend_frameworks", 72 / 56);
+  } else {
+    updateSkills("programming_languages", 1.0);
+    updateSkills("frontend_frameworks", 1.0);
+    updateSkills("backend_frameworks", 1.0);
+  }
 });

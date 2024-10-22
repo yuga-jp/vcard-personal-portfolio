@@ -6,11 +6,6 @@
     --tw-text-opacity: 1;
     color: rgb(253 186 116 / var(--tw-text-opacity));
   }
-
-  .circular-progress-indicator {
-    --tw-gradient-stops: rgb(253 186 116), rgb(251 146 60), rgb(249 115 22);
-    background: conic-gradient(var(--tw-gradient-stops));
-  }
 }
 
 :root {
