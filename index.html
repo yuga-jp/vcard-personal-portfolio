@@ -60,12 +60,12 @@
         </li>
 
         <li>
-          <button class="active text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
+          <button class="text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
             data-home-nav="cv">CV</button>
         </li>
 
         <li>
-          <button class="text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
+          <button class="active text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
             data-home-nav="portfolio">Portfolio</button>
         </li>
 
@@ -133,10 +133,8 @@
 
           <div>
             <p class="mb-0.5 text-sm text-gray-400">BIRTHDAY</p>
-            <time class="text-base text-slate-50 lg:hidden" datetime="2001-11-23">Nov. 23,
-              2001</time>
-            <time class="hidden text-base text-slate-50 lg:block" datetime="2001-11-23">November
-              23, 2001</time>
+            <time class="text-base text-slate-50 lg:hidden" datetime="2001-11-23">Nov. 23, 2001</time>
+            <time class="hidden text-base text-slate-50 lg:block" datetime="2001-11-23">November 23, 2001</time>
           </div>
         </li>
 
@@ -210,8 +208,7 @@
 
             <div>
               <p class="mb-0.5 text-sm text-gray-400">BIRTHDAY</p>
-              <time class="text-sm text-slate-50" datetime="2001-11-23">November
-                23, 2001</time>
+              <time class="text-sm text-slate-50" datetime="2001-11-23">November 23, 2001</time>
             </div>
           </li>
 
@@ -281,7 +278,7 @@
         </section>
       </article>
 
-      <article id="page-cv" class="cv active" data-page-type="home" data-page="cv">
+      <article id="page-cv" class="" data-page-type="home" data-page="cv">
         <header>
           <h2
             class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
@@ -351,7 +348,7 @@
         </section>
       </article>
 
-      <article id="page-portfolio" class="portfolio" data-page-type="home" data-page="portfolio">
+      <article id="page-portfolio" class="active" data-page-type="home" data-page="portfolio">
 
         <header>
           <h2
@@ -359,62 +356,93 @@
             Portfolio</h2>
         </header>
 
-        <section>
+        <section class="flex justify-center">
 
-          <ul class="mb-2 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+          <ul
+            class="mb-2 grid grid-cols-1 gap-7 sm:max-w-screen-sm md:grid-cols-2 md:gap-x-5 md:gap-y-6 lg:max-w-full lg:grid-cols-3">
 
-            <li class="project-item">
-              <a class="w-full" href="#">
+            <li>
+              <div class="flex flex-col items-start">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <a href="" class="group relative">
+                  <figure
+                    class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
+                    <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
+                      alt="yagamy" loading="lazy">
+                  </figure>
+                  <div
+                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    See GitHub Repository</div>
+                </a>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="ml-2 text-base font-normal leading-tight text-slate-50">Sample</h3>
-
-                <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item">
-              <a class="w-full" href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="ml-2 text-base font-normal leading-tight text-slate-50">Portfolio</h3>
-
-                <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item">
-              <a class="w-full" href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="ml-2 text-base font-normal leading-tight text-slate-50">Yagamy</h3>
+                <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
 
                 <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
 
-              </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex flex-col items-start">
+
+                <a href="" class="group relative">
+                  <figure
+                    class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
+                    <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
+                      alt="yagamy" loading="lazy">
+                  </figure>
+                  <div
+                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    See GitHub Repository</div>
+                </a>
+
+                <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
+
+                <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="flex flex-col items-start">
+
+                <a href="" class="group relative">
+                  <figure
+                    class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
+                    <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
+                      alt="yagamy" loading="lazy">
+                  </figure>
+                  <div
+                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    See GitHub Repository</div>
+                </a>
+
+                <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
+
+                <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="flex flex-col items-start">
+
+                <a href="" class="group relative">
+                  <figure
+                    class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
+                    <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
+                      alt="yagamy" loading="lazy">
+                  </figure>
+                  <div
+                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    See GitHub Repository</div>
+                </a>
+
+                <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
+
+                <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
+
+              </div>
             </li>
 
           </ul>
