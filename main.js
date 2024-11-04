@@ -1,5 +1,6 @@
 "use strict";
 import setTextData from "./modules/setTextData.mjs";
+import setLinks from "./modules/setLinks.mjs"
 import setSkills from "./modules/setSkills.mjs";
 import updateSkills from "./modules/updateSkills.mjs";
 import setProjects from "./modules/setProjects.mjs";
@@ -112,6 +113,7 @@ addEventListener("touchstart", (event) => {
 
 addEventListener("load", () => {
   setTextData("en");
+  setLinks();
   if (innerWidth >= 640) {
     setSkills("programming_languages", 72 / 56);
     setSkills("frontend_frameworks", 72 / 56);

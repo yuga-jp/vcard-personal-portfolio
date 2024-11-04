@@ -1,0 +1,22 @@
+{
+  "contents": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yuga-jp",
+      "iconType": "font-awesome",
+      "icon": "github"
+    },
+    {
+      "name": "X",
+      "url": "",
+      "iconType": "font-awesome",
+      "icon": "x-twitter"
+    },
+    {
+      "name": "Instagram",
+      "url": "",
+      "iconType": "font-awesome",
+      "icon": "instagram"
+    }
+  ]
+}
