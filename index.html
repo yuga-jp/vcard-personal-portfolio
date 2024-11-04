@@ -20,11 +20,6 @@
   <!-- Font Awesome -->
   <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
   <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
-
-  <!-- Material Symbols -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@200,0..1&icon_names=arrow_drop_down,badge,event,history_edu,home,language,location_on,person&display=block"
-    rel="stylesheet">
 </head>
 
 <body class="flex flex-col align-middle bg-neutral-850">
@@ -47,7 +42,11 @@
 
     <button id="navigation-profile"
       class="mx-2 flex w-20 items-center justify-center text-2xl text-slate-50 hover:text-orange-300 sm:mx-4 md:hidden">
-      <span class="material-symbols-outlined">person</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+      </svg>
     </button>
 
     <nav
@@ -92,8 +91,15 @@
       <button id="lang-button"
         class="flex h-8 w-full items-center rounded-full border border-slate-700 pl-2 text-sm text-slate-50 sm:pl-3 sm:pr-1"
         type="button">
-        <span class="material-symbols-outlined">language</span>
-        <span class="material-symbols-outlined">arrow_drop_down</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
       </button>
       <div id="lang-menu"
         class="absolute right-0 top-14 z-10 mx-2 hidden w-20 flex-col items-start rounded-lg bg-neutral-850 py-2 text-sm text-slate-50 shadow ring-1 sm:mx-4">
@@ -108,7 +114,7 @@
       class="sticky top-16 mx-2 hidden h-max w-52 flex-none rounded-2xl border border-slate-700 bg-neutral-850 px-4 py-6 md:block lg:mx-4 lg:w-64 lg:px-6 lg:pb-8 lg:pt-12 xl:mx-0">
       <div class="flex flex-col items-center gap-4">
         <figure class="bg-zinc-800 md:h-28 md:w-28 md:rounded-2xl lg:h-36 lg:w-36 lg:rounded-3xl">
-          <img alt="Yuga Sonda">
+          <img alt="Yuga Sonda" />
         </figure>
 
         <div>
@@ -128,7 +134,11 @@
         <li class="flex min-w-full items-center gap-4">
           <div
             class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-            <span class="material-symbols-outlined">event</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+            </svg>
           </div>
 
           <div>
@@ -141,7 +151,12 @@
         <li class="flex min-w-full items-center gap-4">
           <div
             class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-            <span class="material-symbols-outlined">location_on</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
           </div>
 
           <div>
@@ -183,7 +198,7 @@
       <article id="page-profile" class="py-2">
         <div class="flex flex-col items-center gap-4">
           <figure class="h-44 w-44 rounded-3xl bg-zinc-800 sm:h-52 sm:w-52">
-            <img alt="Yuga Sonda">
+            <img alt="Yuga Sonda" />
           </figure>
 
           <div>
@@ -203,7 +218,12 @@
           <li class="flex min-w-full items-center gap-4">
             <div
               class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-              <span class="material-symbols-outlined">event</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+              </svg>
+
             </div>
 
             <div>
@@ -215,7 +235,12 @@
           <li class="flex min-w-full items-center gap-4">
             <div
               class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-              <span class="material-symbols-outlined">location_on</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
             </div>
 
             <div>
@@ -290,7 +315,11 @@
           <div class="mb-6 flex items-center gap-4">
             <div
               class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-              <span class="material-symbols-outlined z-10">history_edu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+              </svg>
             </div>
 
             <h3>Education</h3>
@@ -303,7 +332,11 @@
           <div class="mb-6 flex items-center gap-4">
             <div
               class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-              <span class="material-symbols-outlined z-10">badge</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+              </svg>
             </div>
 
             <h3>Experience</h3>
@@ -316,7 +349,11 @@
           <div class="mb-6 flex items-center gap-4">
             <div
               class="relative z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-neutral-700 to-neutral-800 to-20% text-base text-orange-300 shadow ring-1 ring-neutral-900 sm:h-12 sm:w-12 sm:rounded-xl sm:text-lg">
-              <span class="material-symbols-outlined z-10">badge</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+              </svg>
             </div>
 
             <h3>My skills</h3>
@@ -363,85 +400,101 @@
 
             <li>
               <div class="flex flex-col items-start">
-
                 <a href="" class="group relative">
                   <figure
                     class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
                     <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
-                      alt="yagamy" loading="lazy">
+                      alt="yagamy" loading="lazy" />
                   </figure>
                   <div
-                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
-                    See GitHub Repository</div>
+                    class="absolute top-[50%] flex w-full -translate-y-1/2 items-center justify-center gap-1 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    <p>GitHub Repository</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
                 </a>
 
                 <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
 
                 <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
-
               </div>
             </li>
 
             <li>
               <div class="flex flex-col items-start">
-
                 <a href="" class="group relative">
                   <figure
                     class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
                     <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
-                      alt="yagamy" loading="lazy">
+                      alt="yagamy" loading="lazy" />
                   </figure>
                   <div
-                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
-                    See GitHub Repository</div>
+                    class="absolute top-[50%] flex w-full -translate-y-1/2 items-center justify-center gap-1 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    <p>GitHub Repository</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
                 </a>
 
                 <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
 
                 <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
-
               </div>
             </li>
 
             <li>
               <div class="flex flex-col items-start">
-
                 <a href="" class="group relative">
                   <figure
                     class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
                     <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
-                      alt="yagamy" loading="lazy">
+                      alt="yagamy" loading="lazy" />
                   </figure>
                   <div
-                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
-                    See GitHub Repository</div>
+                    class="absolute top-[50%] flex w-full -translate-y-1/2 items-center justify-center gap-1 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    <p>GitHub Repository</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
                 </a>
 
                 <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
 
                 <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
-
               </div>
             </li>
 
             <li>
               <div class="flex flex-col items-start">
-
                 <a href="" class="group relative">
                   <figure
                     class="flex h-52 items-center overflow-clip rounded-3xl transition duration-200 group-hover:blur-sm group-hover:brightness-50 sm:h-80 sm:rounded-2xl md:h-auto">
                     <img class="transition duration-200 group-hover:scale-110" src="./assets/projects/yagamy.png"
-                      alt="yagamy" loading="lazy">
+                      alt="yagamy" loading="lazy" />
                   </figure>
                   <div
-                    class="absolute top-[50%] w-full -translate-y-1/2 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
-                    See GitHub Repository</div>
+                    class="absolute top-[50%] flex w-full -translate-y-1/2 items-center justify-center gap-1 text-center text-base text-slate-50 opacity-0 transition duration-100 group-hover:opacity-100">
+                    <p>GitHub Repository</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
                 </a>
 
                 <h3 class="ml-2 text-base font-normal leading-relaxed text-slate-50">Yagamy</h3>
 
                 <p class="ml-2 text-sm font-light text-gray-300 sm:text-base">Mobile app development</p>
-
               </div>
             </li>
 
