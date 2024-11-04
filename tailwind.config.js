@@ -3,7 +3,6 @@ module.exports = {
   content: [
     "./index.html",
     "./main.js",
-    "./assets/icons/*.svg",
     "./modules/**/*.mjs"
   ],
   theme: {

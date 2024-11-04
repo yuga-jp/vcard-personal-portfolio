@@ -2,6 +2,7 @@
 import setTextData from "./modules/setTextData.mjs";
 import setSkills from "./modules/setSkills.mjs";
 import updateSkills from "./modules/updateSkills.mjs";
+import setProjects from "./modules/setProjects.mjs";
 
 const profileNavigation = document.querySelector("#navigation-profile");
 const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
@@ -120,6 +121,7 @@ addEventListener("load", () => {
     setSkills("frontend_frameworks", 1.0);
     setSkills("backend_frameworks", 1.0);
   }
+  setProjects();
 });
 
 const mql_640 = window.matchMedia("(min-width: 640px)");

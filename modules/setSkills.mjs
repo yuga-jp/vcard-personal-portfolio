@@ -1,5 +1,5 @@
 import fetchSkillData from "./api/fetchSkillData.mjs";
-import { createSkillProgressIndicator } from "./components/skillProgressIndicator.mjs";
+import { createSkillItem } from "./components/skillItem.mjs";
 
 async function setSkills(type, imageScale) {
   const data = await fetchSkillData(type);
@@ -7,7 +7,7 @@ async function setSkills(type, imageScale) {
   const skillList = document.querySelector(`#${type}`);
 
   for (const skill of data.contents) {
-    const skillItem = createSkillProgressIndicator(skill, imageScale);
+    const skillItem = createSkillItem(skill, imageScale);
     skillList.appendChild(skillItem);
   }
 }

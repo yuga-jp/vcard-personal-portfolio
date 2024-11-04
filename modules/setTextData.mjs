@@ -1,5 +1,5 @@
 import fetchTextData from "./api/fetchTextData.mjs";
-import createTimelineItem from "./components/education.mjs";
+import createTimelineItem from "./components/timelineItem.mjs";
 
 async function setTextData(lang) {
   const data = await fetchTextData(lang);
