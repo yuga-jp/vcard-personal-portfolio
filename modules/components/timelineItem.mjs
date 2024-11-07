@@ -25,4 +25,9 @@ function createTimelineItem(data) {
   return timelineItem;
 }
 
-export default createTimelineItem;
+function updateTimelineItem(element, data) {
+  element.children[0].textContent = data.title;
+  element.children[2].textContent = data.content;
+}
+
+export { createTimelineItem, updateTimelineItem };

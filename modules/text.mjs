@@ -1,7 +1,7 @@
 import fetchTextData from "./api/fetchTextData.mjs";
-import createTimelineItem from "./components/timelineItem.mjs";
+import { createTimelineItem, updateTimelineItem } from "./components/timelineItem.mjs";
 
-async function setTextData(lang) {
+async function setTexts(lang) {
   const data = await fetchTextData(lang);
 
   const educationData = data.education;
@@ -19,4 +19,14 @@ async function setTextData(lang) {
   }
 }
 
-export default setTextData;
+async function updateTexts(lang) {
+  const data = await fetchTextData(lang);
+
+  const educationData = data.education;
+  const educationList = document.querySelector("#education");
+  for (let i = 0; i < educationData.length; i++) {
+    updateTimelineItem(educationList.children[i], educationData[i]);
+  }
+}
+
+export { setTexts, updateTexts };

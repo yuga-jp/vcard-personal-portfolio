@@ -1,15 +1,14 @@
 "use strict";
-import setTextData from "./modules/setTextData.mjs";
+import { setTexts, updateTexts } from "./modules/text.mjs";
 import setLinks from "./modules/setLinks.mjs"
-import setSkills from "./modules/setSkills.mjs";
-import updateSkills from "./modules/updateSkills.mjs";
+import { setSkills, updateSkills } from "./modules/skills.mjs";
 import setProjects from "./modules/setProjects.mjs";
 
 const languageSelectorItems = document.querySelectorAll("[data-lang-select]");
 
 for (const langSelectorItem of languageSelectorItems) {
   langSelectorItem.addEventListener("click", () => {
-    setTextData(langSelectorItem.dataset.langSelect);
+    updateTexts(langSelectorItem.dataset.langSelect);
   });
 }
 
@@ -120,7 +119,7 @@ addEventListener("touchstart", (event) => {
 });
 
 addEventListener("load", () => {
-  setTextData("en");
+  setTexts("en");
   setLinks();
   if (innerWidth >= 640) {
     setSkills("programming_languages", 72 / 56);
