@@ -1,8 +1,8 @@
 "use strict";
 import { setTexts, updateTexts } from "./modules/text.mjs";
-import setLinks from "./modules/setLinks.mjs"
+import setLinks from "./modules/links.mjs"
 import { setSkills, updateSkills } from "./modules/skills.mjs";
-import setProjects from "./modules/setProjects.mjs";
+import setProjects from "./modules/projects.mjs";
 
 const languageSelectorItems = document.querySelectorAll("[data-lang-select]");
 
