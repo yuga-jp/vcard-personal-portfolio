@@ -5,6 +5,14 @@ import setSkills from "./modules/setSkills.mjs";
 import updateSkills from "./modules/updateSkills.mjs";
 import setProjects from "./modules/setProjects.mjs";
 
+const languageSelectorItems = document.querySelectorAll("[data-lang-select]");
+
+for (const langSelectorItem of languageSelectorItems) {
+  langSelectorItem.addEventListener("click", () => {
+    setTextData(langSelectorItem.dataset.langSelect);
+  });
+}
+
 const profileNavigation = document.querySelector("#navigation-profile");
 const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
 const profilePage = document.querySelector("#page-profile");

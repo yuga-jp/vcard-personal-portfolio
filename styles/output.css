@@ -1453,6 +1453,16 @@ h5 {
     left: -40px;
   }
 
+  .before\:sm\:-left-\[41px\]::before {
+    content: var(--tw-content);
+    left: -41px;
+  }
+
+  .before\:sm\:-left-\[40\.5px\]::before {
+    content: var(--tw-content);
+    left: -40.5px;
+  }
+
   .before\:sm\:w-0\.5::before {
     content: var(--tw-content);
     width: 0.125rem;
