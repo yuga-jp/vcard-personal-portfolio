@@ -27,6 +27,12 @@ async function updateTexts(lang) {
   for (let i = 0; i < educationData.length; i++) {
     updateTimelineItem(educationList.children[i], educationData[i]);
   }
+
+  const experienceData = data.experience;
+  const experienceList = document.querySelector("#experience");
+  for (let i = 0; i < experienceData.length; i++) {
+    updateTimelineItem(experienceList.children[i], experienceData[i]);
+  }
 }
 
 export { setTexts, updateTexts };
