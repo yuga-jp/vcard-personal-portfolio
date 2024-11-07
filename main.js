@@ -55,27 +55,6 @@ profileNavigation.addEventListener("click", () => {
   viewingPage = profilePage;
 });
 
-
-
-addEventListener("resize", () => {
-  if (window.innerWidth >= 768 && viewingPage.id === "page-profile") {
-    profilePage.classList.remove("active");
-    profileNavigation.classList.remove("active");
-
-    for (const homeNavItem of homeNavigationItems) {
-      if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
-        homeNavItem.classList.add("active");
-      }
-    }
-    for (const page of homePages) {
-      if (page === lastHomePage) {
-        page.classList.add("active");
-        viewingPage = page;
-      }
-    }
-  }
-});
-
 const langButtton = document.querySelector("#lang-button");
 const langMenu = document.querySelector("#lang-menu");
 
@@ -144,5 +123,26 @@ mql_640.addEventListener("change", (e) => {
     updateSkills("programming_languages", 1.0);
     updateSkills("frontend_frameworks", 1.0);
     updateSkills("backend_frameworks", 1.0);
+  }
+});
+
+const mql_768 = window.matchMedia("(min-width: 768px)");
+
+mql_768.addEventListener("change", (e) => {
+  if (e.matches && viewingPage.id === "page-profile") {
+    profilePage.classList.remove("active");
+    profileNavigation.classList.remove("active");
+
+    for (const homeNavItem of homeNavigationItems) {
+      if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
+        homeNavItem.classList.add("active");
+      }
+    }
+    for (const page of homePages) {
+      if (page === lastHomePage) {
+        page.classList.add("active");
+        viewingPage = page;
+      }
+    }
   }
 });
