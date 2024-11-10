@@ -55,10 +55,10 @@ profileNavigation.addEventListener("click", () => {
   viewingPage = profilePage;
 });
 
-const langButtton = document.querySelector("#lang-button");
+const langButton = document.querySelector("#lang-button");
 const langMenu = document.querySelector("#lang-menu");
 
-langButtton.addEventListener("click", () => {
+langButton.addEventListener("click", () => {
   langMenu.classList.toggle("hidden");
   langMenu.classList.toggle("flex");
 });
@@ -66,12 +66,12 @@ langButtton.addEventListener("click", () => {
 addEventListener("click", (event) => {
   const target = event.target;
   let bool = false;
-  for (const child of langButtton.children) {
+  for (const child of langButton.children) {
     if (target === child) {
       bool = true;
     }
   }
-  if (target === langButtton || target === langMenu) {
+  if (target === langButton || target === langMenu) {
     bool = true;
   }
   if (!bool) {
@@ -83,12 +83,12 @@ addEventListener("click", (event) => {
 addEventListener("touchstart", (event) => {
   const target = event.target;
   let bool = false;
-  for (const child of langButtton.children) {
+  for (const child of langButton.children) {
     if (target === child) {
       bool = true;
     }
   }
-  if (target === langButtton || target === langMenu) {
+  if (target === langButton || target === langMenu) {
     bool = true;
   }
   if (!bool) {
