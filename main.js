@@ -57,43 +57,23 @@ profileNavigation.addEventListener("click", () => {
 
 const langButton = document.querySelector("#lang-button");
 const langMenu = document.querySelector("#lang-menu");
+let isMenuOpen = false;
 
-langButton.addEventListener("click", () => {
+function toggleLangMenu() {
   langMenu.classList.toggle("hidden");
   langMenu.classList.toggle("flex");
-});
+  isMenuOpen = !isMenuOpen;
+}
 
 addEventListener("click", (event) => {
-  const target = event.target;
-  let bool = false;
-  for (const child of langButton.children) {
-    if (target === child) {
-      bool = true;
-    }
+  let isLangButton = false;
+  if (event.target === langButton) {
+    isLangButton = true;
   }
-  if (target === langButton || target === langMenu) {
-    bool = true;
-  }
-  if (!bool) {
-    langMenu.classList.add("hidden");
-    langMenu.classList.remove("flex");
-  }
-});
-
-addEventListener("touchstart", (event) => {
-  const target = event.target;
-  let bool = false;
-  for (const child of langButton.children) {
-    if (target === child) {
-      bool = true;
-    }
-  }
-  if (target === langButton || target === langMenu) {
-    bool = true;
-  }
-  if (!bool) {
-    langMenu.classList.add("hidden");
-    langMenu.classList.remove("flex");
+  if (isLangButton) {
+    toggleLangMenu();
+  } else if (isMenuOpen && event.target !== langMenu) {
+    toggleLangMenu();
   }
 });
 
