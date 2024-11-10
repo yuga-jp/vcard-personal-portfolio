@@ -1,8 +1,16 @@
 import fetchTextData from "./api/fetchTextData.mjs";
+import { createParagraph, updateParagraph } from "./components/paragraph.mjs";
 import { createTimelineItem, updateTimelineItem } from "./components/timelineItem.mjs";
 
 async function setTexts(lang) {
   const data = await fetchTextData(lang);
+
+  const aboutData = data.about;
+  const aboutSection = document.querySelector("#section-about");
+  for (const about of aboutData) {
+    const aboutParagraph = createParagraph(about);
+    aboutSection.appendChild(aboutParagraph);
+  }
 
   const educationData = data.education;
   const educationList = document.querySelector("#education");
@@ -21,6 +29,12 @@ async function setTexts(lang) {
 
 async function updateTexts(lang) {
   const data = await fetchTextData(lang);
+
+  const aboutData = data.about;
+  const aboutSection = document.querySelector("#section-about");
+  for (let i = 0; i < aboutData.length; i++) {
+    updateParagraph(aboutSection.children[i], aboutData[i]);
+  }
 
   const educationData = data.education;
   const educationList = document.querySelector("#education");
