@@ -3,27 +3,24 @@
   "name_ja": "孫田 悠河",
   "about": [
     {
-      "content": "私はエンジニアです。"
-    },
-    {
-      "content": "My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies."
+      "content": "私は、ユーザー視点に立ったデザインを心がけるデザイナーです。ECサイト「StyleMart」のUIデザインを担当し、ユーザーエンゲージメント向上に貢献しました。FigmaやAdobe XDを駆使し、レスポンシブデザインにも強みを持っています。"
     }
   ],
   "education": [
     {
-      "title": "The University of Tokyo",
+      "title": "東京大学",
       "start": "2025.4",
       "end": null,
       "content": "大学院 情報理工学系研究科 創造情報学専攻に在籍。"
     },
     {
-      "title": "Keio University",
+      "title": "慶應義塾大学",
       "start": "2021.4",
       "end": "2025.3",
       "content": "理工学部 物理情報工学科に在籍。学部3年の12月から渡辺研究室に所属。"
     },
     {
-      "title": "Shiba Senior High School",
+      "title": "芝高等学校",
       "start": "2017.4",
       "end": "2020.3",
       "content": ""
@@ -31,22 +28,22 @@
   ],
   "experience": [
     {
-      "title": "株式会社Wunderlust",
+      "title": "株式会社Wanderlust",
       "start": "2024.10",
       "end": null,
-      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+      "content": ""
     },
     {
-      "title": "株式会社Outpace",
+      "title": "株式会社blankpad",
       "start": "2023.9",
       "end": "2023.10",
-      "content": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      "content": ""
     },
     {
       "title": "株式会社アルク",
       "start": "2023.3",
       "end": "2023.9",
-      "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius."
+      "content": ""
     }
   ]
 }

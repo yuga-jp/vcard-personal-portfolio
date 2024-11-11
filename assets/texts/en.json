@@ -3,10 +3,7 @@
   "name_ja": "孫田 悠河",
   "about": [
     {
-      "content": "I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs."
-    },
-    {
-      "content": "My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies."
+      "content": "As a user-centered designer, I have a proven track record of crafting intuitive and visually appealing user interfaces. My experience in designing the user interface for the e-commerce platform \"StyleMart\" significantly improved user engagement and conversion rates. I am proficient in Figma and Adobe XD, and have a deep understanding of responsive design principles."
     }
   ],
   "education": [
@@ -14,39 +11,39 @@
       "title": "The University of Tokyo",
       "start": "2025.4",
       "end": null,
-      "content": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+      "content": ""
     },
     {
       "title": "Keio University",
       "start": "2021.4",
       "end": "2025.3",
-      "content": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus omnis voluptas assumenda est omnis.."
+      "content": ""
     },
     {
       "title": "Shiba Senior High School",
       "start": "2017.4",
       "end": "2020.3",
-      "content": "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+      "content": ""
     }
   ],
   "experience": [
     {
-      "title": "Google",
-      "start": "2015",
-      "end": "Present",
-      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+      "title": "Wanderlust Inc.",
+      "start": "2024.10",
+      "end": null,
+      "content": ""
     },
     {
-      "title": "Facebook",
-      "start": "2013",
-      "end": "2015",
-      "content": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      "title": "blankpad Inc.",
+      "start": "2023.9",
+      "end": "2023.10",
+      "content": ""
     },
     {
-      "title": "Amazon",
-      "start": "2010",
-      "end": "2013",
-      "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius."
+      "title": "ALC PRESS INC.",
+      "start": "2023.3",
+      "end": "2023.9",
+      "content": ""
     }
   ]
 }
