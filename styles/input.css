@@ -30,14 +30,6 @@
   --fw-500: 500;
 }
 
-article {
-  display: none;
-}
-
-article.active {
-  display: block;
-}
-
 h2,
 h3,
 h4,

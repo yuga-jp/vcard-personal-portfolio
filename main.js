@@ -29,29 +29,35 @@ for (const selectNavItem of mainNavigationItems) {
       }
     }
     profileNavigationItem.classList.remove("active");
+
     for (const page of mainPages) {
       if (page.dataset.page === selectNavItem.dataset.navigation) {
-        page.classList.add("active");
+        page.classList.add("block");
+        page.classList.remove("hidden");
         viewingPage = page;
         lastMainPage = page;
       } else {
-        page.classList.remove("active");
+        page.classList.add("hidden");
+        page.classList.remove("block");
       }
     }
-    profilePage.classList.remove("active");
+    profilePage.classList.add("hidden");
+    profilePage.classList.remove("block");
   });
 }
 
 profileNavigationItem.addEventListener("click", () => {
-  profileNavigationItem.classList.add("active");
-
   for (const navItem of mainNavigationItems) {
     navItem.classList.remove("active");
   }
+  profileNavigationItem.classList.add("active");
+
   for (const page of mainPages) {
-    page.classList.remove("active");
+    page.classList.add("hidden");
+    page.classList.remove("block");
   }
-  profilePage.classList.add("active");
+  profilePage.classList.add("block");
+  profilePage.classList.remove("hidden");
   viewingPage = profilePage;
 });
 
@@ -115,7 +121,8 @@ const mql_768 = window.matchMedia("(min-width: 768px)");
 mql_768.addEventListener("change", (e) => {
   if (e.matches && viewingPage.id === "page-profile") {
     profileNavigationItem.classList.remove("active");
-    profilePage.classList.remove("active");
+    profilePage.classList.add("hidden");
+    profilePage.classList.remove("block");
 
     for (const navItem of mainNavigationItems) {
       if (navItem.dataset.navigation === lastMainPage.dataset.page) {
@@ -124,7 +131,8 @@ mql_768.addEventListener("change", (e) => {
     }
     for (const page of mainPages) {
       if (page === lastMainPage) {
-        page.classList.add("active");
+        page.classList.add("block");
+        page.classList.remove("hidden");
         viewingPage = page;
       }
     }
