@@ -12,28 +12,28 @@ for (const langSelectorItem of languageSelectorItems) {
   });
 }
 
-const profileNavigation = document.querySelector("#navigation-profile");
-const homeNavigationItems = document.querySelectorAll("[data-home-nav]");
+const profileNavigationItem = document.querySelector("#navigation-profile");
+const mainNavigationItems = document.querySelectorAll("[data-navigation]");
 const profilePage = document.querySelector("#page-profile");
-const homePages = document.querySelectorAll("[data-page-type='home']");
-let lastHomePage = document.querySelector("#page-cv");
-let viewingPage = document.querySelector("#page-cv");
+const mainPages = document.querySelectorAll("[data-page]");
+let lastMainPage = document.querySelector("#page-about");
+let viewingPage = document.querySelector("#page-about");
 
-for (const homeNavItem of homeNavigationItems) {
-  homeNavItem.addEventListener("click", () => {
-    for (const item of homeNavigationItems) {
-      if (item === homeNavItem) {
-        item.classList.add("active");
+for (const selectNavItem of mainNavigationItems) {
+  selectNavItem.addEventListener("click", () => {
+    for (const navItem of mainNavigationItems) {
+      if (navItem === selectNavItem) {
+        navItem.classList.add("active");
       } else {
-        item.classList.remove("active");
+        navItem.classList.remove("active");
       }
     }
-    profileNavigation.classList.remove("active");
-    for (const page of homePages) {
-      if (page.dataset.page === homeNavItem.dataset.homeNav) {
+    profileNavigationItem.classList.remove("active");
+    for (const page of mainPages) {
+      if (page.dataset.page === selectNavItem.dataset.navigation) {
         page.classList.add("active");
         viewingPage = page;
-        lastHomePage = page;
+        lastMainPage = page;
       } else {
         page.classList.remove("active");
       }
@@ -42,19 +42,20 @@ for (const homeNavItem of homeNavigationItems) {
   });
 }
 
-profileNavigation.addEventListener("click", () => {
-  profileNavigation.classList.add("active");
+profileNavigationItem.addEventListener("click", () => {
+  profileNavigationItem.classList.add("active");
 
-  for (const homeNavItem of homeNavigationItems) {
-    homeNavItem.classList.remove("active");
+  for (const navItem of mainNavigationItems) {
+    navItem.classList.remove("active");
   }
-  for (const page of homePages) {
+  for (const page of mainPages) {
     page.classList.remove("active");
   }
   profilePage.classList.add("active");
   viewingPage = profilePage;
 });
 
+// Language menu
 const langButton = document.querySelector("#lang-button");
 const langMenu = document.querySelector("#lang-menu");
 let isMenuOpen = false;
@@ -77,6 +78,7 @@ addEventListener("click", (event) => {
   }
 });
 
+// Skills list
 addEventListener("load", () => {
   setTexts("en");
   setLinks();
@@ -92,6 +94,7 @@ addEventListener("load", () => {
   setProjects();
 });
 
+// Media queries 640px
 const mql_640 = window.matchMedia("(min-width: 640px)");
 
 mql_640.addEventListener("change", (e) => {
@@ -106,20 +109,21 @@ mql_640.addEventListener("change", (e) => {
   }
 });
 
+// Media queries 768px
 const mql_768 = window.matchMedia("(min-width: 768px)");
 
 mql_768.addEventListener("change", (e) => {
   if (e.matches && viewingPage.id === "page-profile") {
+    profileNavigationItem.classList.remove("active");
     profilePage.classList.remove("active");
-    profileNavigation.classList.remove("active");
 
-    for (const homeNavItem of homeNavigationItems) {
-      if (homeNavItem.dataset.homeNav === lastHomePage.dataset.page) {
-        homeNavItem.classList.add("active");
+    for (const navItem of mainNavigationItems) {
+      if (navItem.dataset.navigation === lastMainPage.dataset.page) {
+        navItem.classList.add("active");
       }
     }
-    for (const page of homePages) {
-      if (page === lastHomePage) {
+    for (const page of mainPages) {
+      if (page === lastMainPage) {
         page.classList.add("active");
         viewingPage = page;
       }

@@ -55,17 +55,17 @@
 
         <li>
           <button class="text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
-            data-home-nav="about">About</button>
+            data-navigation="about">About</button>
         </li>
 
         <li>
           <button class="text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
-            data-home-nav="cv">CV</button>
+            data-navigation="cv">CV</button>
         </li>
 
         <li>
           <button class="active text-base text-slate-50 hover:text-orange-300 md:text-lg md:font-medium"
-            data-home-nav="portfolio">Portfolio</button>
+            data-navigation="portfolio">Portfolio</button>
         </li>
 
       </ul>
@@ -175,7 +175,7 @@
 
     <div
       class="mx-1 w-full max-w-screen-md rounded-2xl border border-slate-700 bg-neutral-850 p-4 sm:p-8 md:mx-2 lg:mx-4 xl:mx-10">
-      <article id="page-profile" class="py-2">
+      <article id="page-profile" class="py-2 transition-opacity">
         <div class="flex flex-col items-center gap-4">
           <figure class="h-44 w-44 rounded-3xl bg-zinc-800 sm:h-52 sm:w-52">
             <img alt="Yuga Sonda" />
@@ -236,7 +236,7 @@
         <ul id="links-2" class="flex justify-center gap-8"></ul>
       </article>
 
-      <article id="page-about" class="about" data-page-type="home" data-page="about">
+      <article id="page-about" class="transition-opacity" data-page="about">
         <header>
           <h2
             class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
@@ -247,7 +247,7 @@
         <section id="section-about" class="sm:mb-10"></section>
       </article>
 
-      <article id="page-cv" class="" data-page-type="home" data-page="cv">
+      <article id="page-cv" class="transition-opacity" data-page="cv">
         <header>
           <h2
             class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
@@ -329,8 +329,7 @@
         </section>
       </article>
 
-      <article id="page-portfolio" class="active" data-page-type="home" data-page="portfolio">
-
+      <article id="page-portfolio" class="active transition-opacity" data-page="portfolio">
         <header>
           <h2
             class="relative mb-4 pb-2 text-slate-50 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-8 after:rounded after:bg-orange-300 sm:mb-5 sm:pb-4 sm:font-semibold after:sm:h-[5px] after:sm:w-10 md:pb-5">
